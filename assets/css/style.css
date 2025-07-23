@@ -934,26 +934,55 @@ header ul li a.active {
   background: #fff;
   border-radius: 4px;
   overflow: hidden;
-  transition: transform 0.2s;
 }
 
 .projeto-card::after {
   content: "";
   position: absolute;
   inset: 0;
-  box-shadow: inset 0px -50px 20px rgba(0, 0, 0, 0);
-  transition: box-shadow 0.3s ease;
+  width: 350px;
   pointer-events: none;
+  z-index: 1;
 }
 
 .projeto-card:hover::after {
-  box-shadow: inset 0px -50px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: inset -40px -60px 20px rgba(0, 0, 0, 0.2);
 }
 
 .projeto-img {
   width: 100%;
   height: auto;
   display: block;
+  z-index: 0;
+}
+
+.projeto-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  color: white;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  z-index: 2;
+}
+
+.projeto-card:hover .projeto-info {
+  opacity: 1;
+}
+
+.projeto-info a {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.projeto-info p {
+  margin: 4px 0 0;
+  font-size: 12px;
 }
 
 span.certificate-tag:hover {
