@@ -567,20 +567,20 @@ header ul li a.active {
   color: #645beb;
 }
 
-.c i {
+.f i {
   color: #868e96;
 }
 
-.c i:hover {
-  color: #03599c;
+.f i:hover {
+  color: #8950ff;
 }
 
-.cplusplus i {
+.ps i {
   color: #868e96;
 }
 
-.cplusplus i:hover {
-  color: #9c033a;
+.ps i:hover {
+  color: #2da8ff;
 }
 
 .html5 i {
@@ -599,36 +599,12 @@ header ul li a.active {
   color: #3d8fc6;
 }
 
-.javascript i {
+.ai i {
   color: #868e96;
 }
 
-.javascript i:hover {
-  color: #f0db4f;
-}
-
-.python i {
-  color: #868e96;
-}
-
-.python i:hover {
-  color: #ffd845;
-}
-
-.flask i {
-  color: #868e96;
-}
-
-.flask i:hover {
-  color: #010101;
-}
-
-.linux i {
-  color: #868e96;
-}
-
-.linux i:hover {
-  color: #000;
+.ai i:hover {
+  color: #ff9d08;
 }
 
 .highlight-yellow-brush {
