@@ -266,6 +266,7 @@ header .logo {
   font-weight: 700;
   text-decoration: none;
   font-size: 2rem;
+  padding-left: 10px;
 }
 
 header ul {
@@ -985,6 +986,11 @@ header ul li a.active {
   font-size: 12px;
 }
 
+.nouqen-logo {
+  width: 80px;
+  height: auto;
+}
+
 span.certificate-tag:hover {
   background: #8c43ce;
 }
@@ -1005,13 +1011,6 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-footer .logo {
-  color: black;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 2rem;
 }
 
 footer ul {
