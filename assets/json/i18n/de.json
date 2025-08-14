@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Start",
+    "tools": "Werkzeuge",
+    "experience": "Erfahrung",
+    "projects": "Projekte"
+  },
+
+  "hero": {
+    "title": "Hallo, ich heiße Eduardo.",
+    "description": "Ich bin mehr als nur ein UX/UI-Designer – ich brenne für absolut alles, was mit der Welt des Designs zu tun hat. Auf dieser Seite findest du mehr über mich, meine Arbeitswerkzeuge und einige der Projekte, die ich entwickelt habe. Ich hoffe, es gefällt dir :)",
+    "contact": "Kontaktieren Sie mich",
+    "resume": "Mein Lebenslauf"
+  },
+
+  "tools": {
+    "title": "Werkzeuge",
+    "subtitle": "Meine wichtigsten Werkzeuge für Interface- und User-Experience-Design.",
+    "subtitle2": "🎨 Ich entwickle hochinteraktive Benutzeroberflächen für Web und Mobile.."
+  },
+
+  "experience": {
+    "title": "Erfahrung",
+
+    "freelancer-title": "Freiberuflicher Designer",
+    "freelancer-date": "Mai 2016 – Heute",
+    "freelancer-subtitle": "Ich habe meine ersten Kunstwerke im Alter von 12 Jahren erstellt und gestalte heute verschiedene Arten von Grafikmaterialien wie Logos, Banner, Wappen usw.",
+
+    "demolay-title": "Präs. der Marketingkommission",
+    "demolay-date": "Juni 2021 – Heute",
+    "demolay-subtitle": "Leiter der Marketingkommission (Bundesstaat Paraná), verantwortlich für die sozialen Medien und die Website der Organisation DeMolay, der größten Jugendorganisation der Welt.",
+
+    "grupoazul-title": "UX/UI Designer",
+    "grupoazul-date": "Februar 2025 – Heute",
+    "grupoazul-subtitle": "Verantwortlich für die Wartung der Systeme App Health, Vizi Saúde und Azul Controle sowie für die vollständige Entwicklung des Systems InPlay Sports."
+  },
+
+  "projects": {
+    "title": "Projekte"
+  }
+}
