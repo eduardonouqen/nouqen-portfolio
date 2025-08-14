@@ -75,7 +75,7 @@ window.onscroll = () => {
 document.addEventListener('DOMContentLoaded', () => {
   const LANG_STORAGE_KEY = 'site_lang';
   const DEFAULT_LANG = 'br';
-  const HTML_LANG_MAP = { br: 'pt-BR', en: 'en', es: 'es', de: 'de', ru: 'ru' };
+  const HTML_LANG_MAP = { br: 'pt-BR', en: 'en', es: 'es', de: 'de', ru: 'ru', cn: 'cn' };
 
   const flagRoot   = document.querySelector('.flag-select');
   const flagList   = flagRoot?.querySelector('.flag-list');
@@ -150,6 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (nav.startsWith('es')) return 'es';
     if (nav.startsWith('de')) return 'de';
     if (nav.startsWith('ru')) return 'ru';
+    if (nav.startsWith('cn')) return 'cn';
     return DEFAULT_LANG;
   })();
 

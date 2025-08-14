@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "開始",
+    "tools": "工具",
+    "experience": "經驗",
+    "projects": "專案"
+  },
+
+  "hero": {
+    "title": "你好，我叫 Eduardo",
+    "description": "我不僅僅是一名 UX/UI 設計師——我熱愛一切與設計世界相關的事物。在此頁面中，你將會看到更多關於我的資訊、我的工作工具，以及我所完成的一些專案。希望你會喜歡 :)",
+    "contact": "聯絡我",
+    "resume": "我的履歷"
+  },
+
+  "tools": {
+    "title": "工具",
+    "subtitle": "我在介面設計與使用者體驗設計方面的主要工具。",
+    "subtitle2": "🎨 我為網頁與行動裝置開發高度互動的使用者介面。"
+  },
+
+  "experience": {
+    "title": "經驗",
+
+    "freelancer-title": "自由接案設計師",
+    "freelancer-date": "2016 年 5 月至今",
+    "freelancer-subtitle": "我在 12 歲時創作了第一批作品，如今我從事各種類型的平面設計製作，例如標誌、旗幟、徽章等。",
+
+    "demolay-title": "行銷委員會領導",
+    "demolay-date": "2021 年 6 月至今",
+    "demolay-subtitle": "行銷委員會領導（巴拉那州），負責管理該組織的社群媒體與官方網站——德莫雷會，這是全球最大的青年組織。",
+
+    "grupoazul-title": "UX/UI 設計師",
+    "grupoazul-date": "2025 年 2 月至今",
+    "grupoazul-subtitle": "負責維護 App Health、Vizi Saúde 和 Azul Controle 系統，並且全程開發完成 InPlay Sports 及多個其他系統，每天在設計中運用自己對最佳實務與無障礙設計的知識。"
+  },
+
+  "projects": {
+    "title": "專案"
+  }
+}
