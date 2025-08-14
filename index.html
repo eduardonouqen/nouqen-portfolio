@@ -93,15 +93,16 @@
           </svg>
         </a>
         <ul>
-          <li><a class="active page" href="#top" id="home-btn">Início</a></li>
-          <li><a href="#about" class="page" id="about-btn">Ferramentas</a></li>
+          <li><a data-i18n="nav.home" class="active page" href="#top" id="home-btn">Início</a></li>
+          <li><a data-i18n="nav.tools" href="#about" class="page" id="about-btn">Ferramentas</a></li>
           <li>
-            <a href="#experience" class="page" id="experience-btn">Experiência</a>
+            <a data-i18n="nav.experience" href="#experience" class="page" id="experience-btn">Experiência</a>
           </li>
           <li>
-            <a href="#projects" class="page" id="project-btn">Projetos</a>
+            <a data-i18n="nav.projects" href="#projects" class="page" id="project-btn">Projetos</a>
           </li>
         </ul>
+
         <div class="flag-select" id="lang-select">
           <button class="flag-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
             <img src="assets/flags/br.svg" alt="" class="flag-ico">
@@ -109,7 +110,7 @@
           </button>
 
           <ul class="flag-list" role="listbox" tabindex="-1">
-            <li class="flag-option" role="option" data-value="pt">
+            <li class="flag-option" role="option" data-value="br">
               <img src="assets/flags/br.svg" alt="" class="flag-ico"><span>Português</span>
             </li>
             <li class="flag-option" role="option" data-value="en">
@@ -127,7 +128,7 @@
           </ul>
 
           <select name="language" class="flag-native" hidden>
-            <option value="pt" selected>Português</option>
+            <option value="br" selected>Português</option>
             <option value="en">English</option>
             <option value="es">Español</option>
             <option value="de">Deutsch</option>
@@ -651,7 +652,7 @@
 
       <!-- BeHance Card -->
       <script>
-        fetch("./assets/behance.json")
+        fetch("./assets/json/behance.json")
           .then((response) => response.json())
           .then((data) => {
             const container = document.getElementById("behance-projects");
@@ -783,7 +784,7 @@
 
       const initOpt = native.options[native.selectedIndex];
       const assets = {
-        pt: 'assets/flags/br.svg',
+        br: 'assets/flags/br.svg',
         en: 'assets/flags/us.svg',
         es: 'assets/flags/es.svg',
         de: 'assets/flags/de.svg',
@@ -792,6 +793,10 @@
       setValue(initOpt.value, initOpt.textContent, assets[initOpt.value]);
     })();
   </script>
+
+  <!---->
+  
+
 </body>
 
 </html>
