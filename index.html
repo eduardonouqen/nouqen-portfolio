@@ -102,6 +102,38 @@
             <a href="#projects" class="page" id="project-btn">Projetos</a>
           </li>
         </ul>
+        <div class="flag-select" id="lang-select">
+          <button class="flag-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <img src="assets/flags/br.svg" alt="" class="flag-ico">
+            <span class="flag-label">Português</span>
+          </button>
+
+          <ul class="flag-list" role="listbox" tabindex="-1">
+            <li class="flag-option" role="option" data-value="pt">
+              <img src="assets/flags/br.svg" alt="" class="flag-ico"><span>Português</span>
+            </li>
+            <li class="flag-option" role="option" data-value="en">
+              <img src="assets/flags/us.svg" alt="" class="flag-ico"><span>English</span>
+            </li>
+            <li class="flag-option" role="option" data-value="es">
+              <img src="assets/flags/es.svg" alt="" class="flag-ico"><span>Español</span>
+            </li>
+            <li class="flag-option" role="option" data-value="de">
+              <img src="assets/flags/de.svg" alt="" class="flag-ico"><span>Deutsch</span>
+            </li>
+            <li class="flag-option" role="option" data-value="ru">
+              <img src="assets/flags/ru.svg" alt="" class="flag-ico"><span>Русский</span>
+            </li>
+          </ul>
+
+          <select name="language" class="flag-native" hidden>
+            <option value="pt" selected>Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="ru">Русский</option>
+          </select>
+        </div>
       </header>
 
       <!-- Main Content -->
@@ -680,6 +712,85 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <script>
+    (function () {
+      const root = document.getElementById('lang-select');
+      const btn = root.querySelector('.flag-btn');
+      const list = root.querySelector('.flag-list');
+      const options = Array.from(root.querySelectorAll('.flag-option'));
+      const native = root.querySelector('.flag-native');
+      const label = root.querySelector('.flag-label');
+      const img = root.querySelector('.flag-btn .flag-ico');
+
+      function openList() {
+        list.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        list.focus();
+      }
+      function closeList() {
+        list.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+      function setValue(val, text, iconSrc) {
+        native.value = val;
+        label.textContent = text;
+        img.src = iconSrc;
+        options.forEach(o => o.removeAttribute('aria-selected'));
+        const current = options.find(o => o.dataset.value === val);
+        if (current) current.setAttribute('aria-selected', 'true');
+      }
+
+      btn.addEventListener('click', () => {
+        const isOpen = list.classList.contains('open');
+        isOpen ? closeList() : openList();
+      });
+
+      options.forEach(opt => {
+        opt.addEventListener('click', () => {
+          const val = opt.dataset.value;
+          const text = opt.querySelector('span').textContent;
+          const iconSrc = opt.querySelector('img').getAttribute('src');
+          setValue(val, text, iconSrc);
+          closeList();
+          btn.focus();
+
+          native.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+      });
+
+      list.addEventListener('keydown', e => {
+        const idx = options.findIndex(o => o.getAttribute('aria-selected') === 'true');
+        if (e.key === 'Escape') { closeList(); btn.focus(); }
+        else if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          const next = options[Math.min((idx + 1 + options.length) % options.length, options.length - 1)];
+          next.focus(); // melhora se cada item tiver tabindex=0
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          const prev = options[(idx - 1 + options.length) % options.length];
+          prev.focus();
+        } else if (e.key === 'Enter') {
+          const focused = document.activeElement.closest('.flag-option') || options[idx] || options[0];
+          focused?.click();
+        }
+      });
+
+      document.addEventListener('click', e => {
+        if (!root.contains(e.target)) closeList();
+      });
+
+      const initOpt = native.options[native.selectedIndex];
+      const assets = {
+        pt: 'assets/flags/br.svg',
+        en: 'assets/flags/us.svg',
+        es: 'assets/flags/es.svg',
+        de: 'assets/flags/de.svg',
+        ru: 'assets/flags/ru.svg'
+      };
+      setValue(initOpt.value, initOpt.textContent, assets[initOpt.value]);
+    })();
   </script>
 </body>
 
