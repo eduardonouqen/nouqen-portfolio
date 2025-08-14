@@ -53,6 +53,8 @@ body {
   transform-origin: 70% 70%;
   /* Pivot around the bottom-left palm */
   display: inline-block;
+  font-size: 2.5rem;
+  margin-left: .5rem;
 }
 
 @keyframes wave-animation {
@@ -434,6 +436,11 @@ header ul li a.active {
 
 .column p .column-p {
   font-size: 1rem;
+}
+
+.align-hero-title {
+  display: flex;
+  align-items: center;
 }
 
 .button-hero {

@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "tools": "Herramientas",
+    "experience": "Experiencia",
+    "projects": "Proyectos"
+  },
+
+  "hero": {
+    "title": "Hola, me llamo Eduardo",
+    "description": "Soy más que un diseñador UX/UI: me apasiona absolutamente todo lo relacionado con el mundo del diseño. En esta página encontrarás más sobre mí, mis herramientas de trabajo y algunos de los proyectos que he desarrollado. Espero que te guste :)",
+    "contact": "Ponte en contacto",
+    "resume": "Mi currículum"
+  },
+
+  "tools": {
+    "title": "Herramientas",
+    "subtitle": "Mis principales herramientas para el diseño de interfaces y experiencia de usuario.",
+    "subtitle2": "🎨 Desarrollo interfaces de usuario altamente interactivas para web y dispositivos móviles."
+  },
+
+  "experience": {
+    "title": "Experiencia",
+
+    "freelancer-title": "Diseñador freelance",
+    "freelancer-date": "Mayo de 2016 – Presente",
+    "freelancer-subtitle": "Realicé mis primeras obras de arte a los 12 años y, hoy en día, creo diversos tipos de materiales gráficos, como logotipos, estandartes, escudos, etc.",
+
+    "demolay-title": "Pres. de la Comisión de Marketing",
+    "demolay-date": "Junio de 2021 – Presente",
+    "demolay-subtitle": "Líder de la comisión de marketing (estado de Paraná), encargado de las redes sociales y del sitio web de la organización DeMolay, la organización juvenil más grande del mundo.",
+
+    "grupoazul-title": "Diseñador UX/UI",
+    "grupoazul-date": "Febrero de 2025 – Presente",
+    "grupoazul-subtitle": "Responsable del mantenimiento de los sistemas App Health, Vizi Saúde y Azul Controle, además de haber desarrollado por completo el sistema InPlay Sports."
+  },
+
+  "projects": {
+    "title": "Proyectos"
+  }
+}
