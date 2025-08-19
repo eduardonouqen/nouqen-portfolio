@@ -306,6 +306,8 @@ header ul li a {
   padding: 8px 15px;
   border-radius: 1rem;
   transition: 500ms ease;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
 }
 
 header ul li a:hover,
@@ -1059,6 +1061,8 @@ header ul li a.active {
   cursor: pointer;
   font-weight: 500;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
 }
 
 .flag-ico {
