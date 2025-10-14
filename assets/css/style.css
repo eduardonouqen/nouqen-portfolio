@@ -685,13 +685,14 @@ header ul li a.active {
 
 .experience-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  grid-gap: 1rem 1rem;
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(4, 341px);
+  gap: 1rem;
+  justify-content: center;
   margin-top: 25px;
 }
 
 .experience-card {
+  width: 341px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
   border-radius: 1rem;
   backdrop-filter: blur(1rem);
